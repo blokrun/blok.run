@@ -9,8 +9,8 @@ Laravel 10 + Fillament 3.0
 
 #### Demo Login to Filament:
 URL: http://localhost:8000/admin/login
-Email: demo@demo.com 
-Demo pass: demo
+Email: blok@blok.run 
+Demo pass: blok
 
 ## Installation
 1. Clone repo `git clone https://github.com/blokrun/blok.git`
