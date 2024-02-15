@@ -1,5 +1,5 @@
 # blok.run engine
-Run Blocks on your Server to launch Website, Ecommerce or App
+Run Blocks on your Server to launch a Website, Ecommerce or App
 
 #### Official page
 https://blok.run
@@ -19,7 +19,7 @@ Demo pass: demo
 
 ## Database
 1. `blok.run` use `MySQL` by default as a very simple solution. 
-2. If you have very small project - you can usel SQLite, to store database in file and hold it in private repository. So you will have same information in localhost and production. More easy to develop.
+2. If you have a very small project - you can use SQLite, to store database in file and hold it in your private repository together with app files. You will have the same information in your localhost and production. That will be easy for your App Development.
 
 ## Screenshots
 ![blok.run CMS Dashboard](/public/blokrun/cms-home.png)
