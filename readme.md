@@ -13,7 +13,7 @@ Email: blok@blok.run
 Demo pass: blok
 
 ## Installation
-1. Clone repo `git clone https://github.com/blokrun/blok.git`
+1. Clone repo `git clone https://github.com/blokrun/blok.run.git`
 2. Go to cloned folder with your terminal and perform these commands `$ composer install` `$ npm install` `$ php artisan serve`
 5. Check your https://localhost:8000
 
