@@ -29,7 +29,6 @@ class ProductCategoryResource extends Resource
                     ->label('Parent Category'),
                 Forms\Components\TextInput::make('language_id'),
                 Forms\Components\TextInput::make('name'),
-                Forms\Components\TextInput::make('slug'),
                 Forms\Components\Textarea::make('description'),
                 Forms\Components\Checkbox::make('is_active'),
                 Forms\Components\TextInput::make('position_nb'),

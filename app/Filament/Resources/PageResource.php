@@ -29,8 +29,6 @@ class PageResource extends Resource
         return $form
             ->schema([
             Forms\Components\TextInput::make('name'),
-            Forms\Components\TextInput::make('slug'),
-
             Forms\Components\Textarea::make('text'),
                 Forms\Components\Textarea::make('description'),
                 Forms\Components\TextInput::make('logo_url'),

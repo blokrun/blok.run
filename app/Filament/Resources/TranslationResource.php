@@ -26,7 +26,6 @@ class TranslationResource extends Resource
             ->schema([
                 // Other fields, if any
                 Forms\Components\Textarea::make('text'),
-                Forms\Components\Textarea::make('slug'),
                 Forms\Components\Select::make('language_id')
                     ->label('Language')
                     ->default(1)

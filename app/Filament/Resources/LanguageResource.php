@@ -29,17 +29,13 @@ class LanguageResource extends Resource
 
             Forms\Components\TextInput::make('code'),
 
-            Forms\Components\TextInput::make('name_en'),
-
             Forms\Components\TextInput::make('name')->required(),
-
-            Forms\Components\TextInput::make('slug'),
-
-            Forms\Components\TextInput::make('slug_en'),
 
             Forms\Components\TextInput::make('position_nb'),
 
             Forms\Components\Checkbox::make('is_active'),
+
+            Forms\Components\Checkbox::make('is_default'),
 
             Forms\Components\DateTimePicker::make('created_at')->disabled(),
 
