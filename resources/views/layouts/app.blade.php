@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{t('website_title')}}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    @vite('resources/css/app.css')
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,44 +14,35 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-    {{--}}
-    <link id="favicon" rel="icon" type="image/x-icon" href="favicon-default.ico">
-    <link rel="icon" href="{{ asset('logo-32.png') }}" sizes="32x32">
-    <link rel="icon" href="{{ asset('logo-192.png') }}" sizes="192x192" />
-    --}}
 
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    {{-- Google Analytics --}}
-    @if (getDomain() != '127.0.0.1' and 1==2)
-        @if (getLanguageId()==1)
-            <!-- Google tag - xecode.lt (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMHY0GVH8X"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'G-SMHY0GVH8X');
-            </script>
-        @else
-            <!-- Google tag - xecode.io (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CPPRLCMN4"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'G-4CPPRLCMN4');
-            </script>
-        @endif
-    @endif
-
+    {{-- Styles --}}
+    @vite('resources/css/app.css')
 </head>
 
+<body class="bg-white mt-20">
+
+    <div class="container">
+        <div class="mb-10 border-bottom border-gray-400">
+            <?php
+            $categories = \App\Models\ProductCategory::where(['is_active'=>1])->get();
+
+            ?>
+            <ul class="flex  flex-shrink">
+                <li class="pr-6"><a href="{{ url('/') }}" class="text-blue-800">Home</a></li>
+                @foreach ($categories as $c)
+                    <li class="pr-6"><a href="{{ url('/'.$c->slug) }}" class="text-blue-800">{{$c->name}}</a></li>
+                @endforeach
+            </ul>
+        </div>
+        @yield('content')
+    </div>
+<?php
+/*
 <body class="bg-white mt-20">
 
 
@@ -96,6 +86,8 @@
             sidebar.classList.toggle('hidden');
         });
     </script>
+    */
+    ?>
 </body>
 
 </html>

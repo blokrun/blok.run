@@ -18,6 +18,8 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
+
 class PageResource extends Resource
 {
     protected static ?string $model = Page::class;
@@ -29,8 +31,10 @@ class PageResource extends Resource
         return $form
             ->schema([
             Forms\Components\TextInput::make('name'),
-            Forms\Components\Textarea::make('text'),
+            //Forms\Components\Textarea::make('text'),
                 Forms\Components\Textarea::make('description'),
+                
+                TinyEditor::make('text'),
                 Forms\Components\TextInput::make('logo_url'),
         ]);
     }
@@ -42,6 +46,7 @@ class PageResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->sortable()
                     ->searchable(),
+
 
 
                 /*

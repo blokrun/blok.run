@@ -4,7 +4,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class ProductCategorySeeder extends Seeder
+class MediaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,7 @@ class ProductCategorySeeder extends Seeder
     {
         /**
          * Command :
-         * artisan seed:generate ProductCategory
+         * artisan seed:generate Media
          *
          */
 

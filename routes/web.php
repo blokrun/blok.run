@@ -14,13 +14,7 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-
-//Route::get('/', [PagesController::class, 'home']);
-Route::get('/', [PagesController::class, 'listPages']);
-Route::get('/ai-tools', [PagesController::class, 'listPages']);
-Route::get('/dirbtinio-intelekto-irankiai', [PagesController::class, 'listPages']);
-Route::get('/susisiekite', [PagesController::class, 'susisiekite']);
-Route::get('/apie', [PagesController::class, 'apie']);
+Route::get('/', [PagesController::class, 'home']);
 
 // Last One:
-Route::get('/{slug}', [PagesController::class, 'showPage']);
+Route::get('/{slug}', [PagesController::class, 'showProductCategory']);

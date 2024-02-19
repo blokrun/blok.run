@@ -20,19 +20,6 @@ class PageSeeder extends Seeder
          */
 
         
-        $newData0 = \App\Models\Page::create([
-            'id' => 1,
-            'name' => 'Pirkimo sąlygos',
-            'slug' => 'pirkimo-salygos',
-            'text' => NULL,
-            'is_active' => NULL,
-            'category_id' => NULL,
-            'language_id' => NULL,
-            'created_at' => '2024-02-14 13:59:56',
-            'updated_at' => '2024-02-14 13:59:56',
-            'description' => NULL,
-            'logo_url' => NULL,
-            'website_url' => NULL,
-        ]);
+        
     }
 }

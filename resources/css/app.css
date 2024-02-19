@@ -5,6 +5,10 @@
 body {
     font-family: 'Lexend', sans-serif;
 }
+.container {
+    @apply m-auto px-2;
+    max-width:900px;
+}
 .contentText p {
     @apply mb-4;
 }

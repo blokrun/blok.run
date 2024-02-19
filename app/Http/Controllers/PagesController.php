@@ -6,19 +6,21 @@ use Illuminate\Http\Request;
 use App\Pages;
 use App\Models\Page;
 
+use App\Models\ProductCategory;
+
 // Assuming you have an Eloquent model named "Page" for the "pages" table.
 
 class PagesController extends Controller
 {
-    public function showPage($slug)
+    public function showProductCategory($slug)
     {
-        $page = Page::where('slug', $slug)->first();
+        $category = ProductCategory::where('slug', $slug)->first();
 
-        if (!$page) {
+        if (!$category) {
             abort(404); // Handle page not found
         }
 
-        return view('pages.show', ['page' => $page]);
+        return view('pages.showProductCategory', ['category' => $category]);
     }
 
     public function listPages()
@@ -30,7 +32,10 @@ class PagesController extends Controller
 
     public function home()
     {
-        return view('pages.home');
+
+        $page = Page::where('is_homepage', 1)->first();
+
+        return view('pages.home', ['page' => $page]);
     }
 
     public function susisiekite()
