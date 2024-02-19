@@ -26,6 +26,16 @@ Demo pass: blok
 
 `php artisan db:seed --class=UserSeeder`
 
+`php artisan db:seed --class=LanguageSeeder`
+
+`php artisan db:seed --class=MediaSeeder`
+
+`php artisan db:seed --class=PageSeeder`
+
+`php artisan db:seed --class=ProductSeeder`
+
+`php artisan db:seed --class=ProductCategorySeeder`
+
 `php artisan serve`
 
 
