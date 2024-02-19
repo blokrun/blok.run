@@ -1,5 +1,5 @@
 # blok.run engine, version: 1.02
-Run Blocks on your Server to launch a Website, Ecommerce or App
+Minimalist Ecommerce Engine running on Laravel and Filament.
 
 #### Official page
 [http://blok.run](http://blok.run)
