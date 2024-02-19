@@ -59,7 +59,12 @@ To create migrations for all the tables, run:
 `php artisan seed:generate`
 
 ## Screenshots
+Filament Admin Panel
+
 ![blok.run CMS Dashboard](/public/blokrun/cms-home.png)
+
+Website Preview
+![blok.run CMS Dashboard](/public/blokrun/front-end-1.png)
 
 #### Contact Us
 if you have any ideas -  [contact via email](mailto:hello@xecode.lt)
