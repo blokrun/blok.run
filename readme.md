@@ -16,28 +16,22 @@ Demo pass: blok
 
 ## Installation
 1. Clone repo `git clone https://github.com/blokrun/blok.run.git`
-2. Go to cloned folder with your terminal and perform these commands:
+2. Go to the cloned folder with your terminal and paste this block of commands:
 
-`composer install` 
+`
+composer install
+npm install
+php artisan migrate
+php artisan db:seed --class=LanguageSeeder
+php artisan db:seed --class=UserSeeder
+php artisan db:seed --class=MediaSeeder
+php artisan db:seed --class=PageSeeder
+php artisan db:seed --class=ProductSeeder
+php artisan db:seed --class=ProductCategorySeeder
+php artisan serve
+`
 
-`npm install` 
-
-`php artisan migrate`
-
-`php artisan db:seed --class=LanguageSeeder` - must be first to avoid foreign key conflicts
-
-`php artisan db:seed --class=UserSeeder`
-
-`php artisan db:seed --class=MediaSeeder`
-
-`php artisan db:seed --class=PageSeeder`
-
-`php artisan db:seed --class=ProductSeeder`
-
-`php artisan db:seed --class=ProductCategorySeeder`
-
-`php artisan serve`
-
+`LanguageSeeder` must be first to avoid foreign key conflicts
 
 
 5. Check your [http://localhost:8000](http://localhost:8000)
