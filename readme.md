@@ -24,9 +24,9 @@ Demo pass: blok
 
 `php artisan migrate`
 
-`php artisan db:seed --class=UserSeeder`
+`php artisan db:seed --class=LanguageSeeder` - must be first to avoid foreign key conflicts
 
-`php artisan db:seed --class=LanguageSeeder`
+`php artisan db:seed --class=UserSeeder`
 
 `php artisan db:seed --class=MediaSeeder`
 

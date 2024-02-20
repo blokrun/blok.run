@@ -103,7 +103,7 @@ return new class extends Migration
 */
         Schema::create('product_categories', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('parent_id')->nullable()->index('product_categories_parent_id_foreign');
+            $table->unsignedBigInteger('parent_id')->nullable();
             $table->unsignedBigInteger('language_id')->index('product_categories_language_id_foreign');
             $table->string('name');
             $table->string('slug')->unique();
