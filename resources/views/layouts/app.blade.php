@@ -24,7 +24,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="bg-white mt-20">
+<body class="bg-gray-50 mt-20">
 
     <div class="container">
         <div class="mb-10 border-bottom border-gray-400">
