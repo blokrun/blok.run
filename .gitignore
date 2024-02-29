@@ -5,8 +5,8 @@
 # Rewrite standard `/public/storage` to this, to have exceptions
 /public/storage/*
 # Exception for some blok.run demo files
-!/public/storage/public/3
-!/public/storage/public/4
+!/public/storage/3
+!/public/storage/4
 
 /storage/*.key
 /vendor
