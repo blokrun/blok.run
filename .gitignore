@@ -7,8 +7,8 @@
 /public/storage/*
 /storage/*
 # Exception for some blok.run demo files
-!/storage/app/public/3
-!/storage/app/public/4
+!/storage/app/public/3/
+!/storage/app/public/4/
 
 
 /vendor
