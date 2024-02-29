@@ -1,14 +1,16 @@
 /.phpunit.cache
 /node_modules
 /public/hot
-
-# Rewrite standard `/public/storage` to this, to have exceptions
-/public/storage/*
-# Exception for some blok.run demo files
-!/public/storage/3
-!/public/storage/4
-
 /storage/*.key
+
+# Rewrite standard `/storage` to this, to have exceptions
+/public/storage/*
+/storage/*
+# Exception for some blok.run demo files
+!/storage/app/public/3
+!/storage/app/public/4
+
+
 /vendor
 .env
 .env.backup
