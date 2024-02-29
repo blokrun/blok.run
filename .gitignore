@@ -2,15 +2,6 @@
 /node_modules
 /public/hot
 /storage/*.key
-
-# Rewrite standard `/storage` to this, to have exceptions
-/public/storage/*
-/storage/*
-# Exception for some blok.run demo files
-!/storage/app/public/3/
-!/storage/app/public/4/
-
-
 /vendor
 .env
 .env.backup
@@ -24,5 +15,8 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# Activate this line, when you will move out of Demo Website
+# /public/storage/*
 
 /public/pma2-53a5687cb26dc41f2ab4033e97e13adefd3740d6
