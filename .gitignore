@@ -16,10 +16,9 @@ yarn-error.log
 /.idea
 /.vscode
 
-# When you will out of Demo Website:
-# 1. Activate these lines, when you will move out of Demo Website.
-# 2. Activate lines in  lines in storage/.gitignore
-# /public/storage/*
-# /storage
-
+# blok.run
 /public/pma2-53a5687cb26dc41f2ab4033e97e13adefd3740d6
+
+# When you will out of Demo Website:
+# Remove first line in `storage/app/public/.gitignore`, uncomment other lines.
+# Then .gitignore will become as in original Laravel package
