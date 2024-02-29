@@ -59,9 +59,11 @@ Filament Admin Panel
 ![blok.run CMS Dashboard](/public/blokrun/cms-home.png)
 
 ## Design
+
+### Option 1
 ![Template 1](/public/blokrun/1.blok.run.png)
 
-You can find Figma File here:
-https://www.figma.com/file/j0QLABGRvbAdRlogYbQjUq/1?type=design&node-id=1%3A2&mode=design&t=cWzkKnpqDIfzv7re-1
+[You can find Figma File here](https://www.figma.com/file/j0QLABGRvbAdRlogYbQjUq/1?type=design&node-id=1%3A2&mode=design&t=cWzkKnpqDIfzv7re-1)
+
 ## Contact Us
 if you have any ideas -  [contact via email](mailto:hello@xecode.lt)
