@@ -16,7 +16,8 @@ Demo pass: blok
 
 ## Installation
 1. Clone repo `git clone https://github.com/blokrun/blok.run.git`
-2. Go to the cloned folder with your terminal and paste this block of commands:
+2. Rename `.env.example` to `.env` and add your DB config and `APP_URL`, otherwise photos will be not served.
+3. Go to the cloned folder with your terminal and paste this block of commands:
 
 
 ```
@@ -29,6 +30,7 @@ php artisan db:seed --class=MediaSeeder
 php artisan db:seed --class=PageSeeder
 php artisan db:seed --class=ProductSeeder
 php artisan db:seed --class=ProductCategorySeeder
+php artisan storage:link
 php artisan serve
 ```
 
