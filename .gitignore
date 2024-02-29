@@ -16,7 +16,10 @@ yarn-error.log
 /.idea
 /.vscode
 
-# Activate this line, when you will move out of Demo Website
+# When you will out of Demo Website:
+# 1. Activate these lines, when you will move out of Demo Website.
+# 2. Uncomment lines in storage/.gitignore
 # /public/storage/*
+# /storage
 
 /public/pma2-53a5687cb26dc41f2ab4033e97e13adefd3740d6
