@@ -1,4 +1,4 @@
-# blok.run engine, version: 1.02
+# blok.run engine, version: 1.03
 Minimalist Ecommerce Engine running on Laravel and Filament.
 
 #### Official page

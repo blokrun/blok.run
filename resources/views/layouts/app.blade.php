@@ -27,18 +27,42 @@
 <body class="bg-gray-50 mt-20">
 
     <div class="container">
-        <div class="mb-10 border-bottom border-gray-400">
-            <?php
-            $categories = \App\Models\ProductCategory::where(['is_active'=>1])->get();
+        <div class="flex mb-4 ">
+            <div class="flex-1 w-4/12">
+                <div class="pt-4 border-bottom border-gray-400">
+                    <?php
+                    $categories = \App\Models\ProductCategory::where(['is_active'=>1])->get();
 
-            ?>
-            <ul class="flex  flex-shrink">
-                <li class="pr-6"><a href="{{ url('/') }}" class="text-blue-800">Home</a></li>
-                @foreach ($categories as $c)
-                    <li class="pr-6"><a href="{{ url('/'.$c->slug) }}" class="text-blue-800">{{$c->name}}</a></li>
-                @endforeach
-            </ul>
+                    ?>
+                    <ul class="flex  flex-shrink">
+                        @foreach ($categories as $c)
+                            <li class="pr-6"><a href="{{ url('/'.$c->slug) }}" class="text-blue-800">{{$c->name}}</a></li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-1 w-4/12 text-center">
+                <a href="{{ url('/') }}">
+                    <img src="{{ url('/images/theme_1/logo.svg') }}" class="w-[110px] m-auto">
+                </a>
+            </div>
+            <div class="flex-1 w-4/12">
+                <div class="pt-4  border-bottom border-gray-400">
+                    <?php
+                    $categories = \App\Models\ProductCategory::where(['is_active'=>1])->get();
+
+                    ?>
+                    <ul class="flex flex-shrink float-right">
+                        <li class="pl-6 "><a href="{{ url('/about') }}" class="text-blue-800">About</a></li>
+
+                    </ul>
+                </div>
+            </div>
         </div>
+        <div class="mb-10 border-bottom border-gray-400">
+            <img src="{{ url('/images/theme_1/header.png') }}" class="w-full">
+        </div>
+
         @yield('content')
     </div>
 <?php

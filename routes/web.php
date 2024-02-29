@@ -15,6 +15,7 @@ use App\Http\Controllers\PagesController;
 */
 
 Route::get('/', [PagesController::class, 'home']);
+Route::get('/about', [PagesController::class, 'home']);
 
 // Last One:
 Route::get('/{slug}', [PagesController::class, 'showProductCategory']);
